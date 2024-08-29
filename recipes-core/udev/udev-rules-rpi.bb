@@ -3,11 +3,11 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
 SRC_URI = " \
-	git://github.com/RPi-Distro/raspberrypi-sys-mods;protocol=https;branch=master \
+	git://github.com/RPi-Distro/raspberrypi-sys-mods;protocol=https;nobranch=1 \
 	file://can.rules \
 	file://fb.rules \
 	"
-SRCREV = "5ce3ef2b7f377c23fea440ca9df0e30f3f8447cf"
+SRCREV = "6efcf2eaae743311533da036a3852f8a5335cc3e"
 
 S = "${WORKDIR}/git"
 
