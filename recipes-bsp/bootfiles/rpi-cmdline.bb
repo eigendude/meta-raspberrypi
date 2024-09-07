@@ -13,6 +13,7 @@ CMDLINE_ROOT_PARTITION ?= "/dev/mmcblk0p2"
 
 CMDLINE_ROOTFS ?= "root=${CMDLINE_ROOT_PARTITION} ${CMDLINE_ROOT_FSTYPE} rootwait"
 
+ENABLE_UART = "1"
 CMDLINE_SERIAL ?= "${@oe.utils.conditional("ENABLE_UART", "1", "console=serial0,115200", "", d)}"
 
 CMDLINE_PITFT ?= "${@bb.utils.contains("MACHINE_FEATURES", "pitft", "fbcon=map:10 fbcon=font:VGA8x8", "", d)}"
