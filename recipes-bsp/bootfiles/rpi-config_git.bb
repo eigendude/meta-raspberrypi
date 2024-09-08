@@ -326,6 +326,9 @@ do_deploy() {
     # https://github.com/raspberrypi/firmware/issues/1848
     # https://github.com/Evilpaul/RPi-config/issues/9
     sed -i '/^##/d' $CONFIG
+
+    # Remove remaining empty lines from config.txt
+    sed -i '/^\s*$/d' $CONFIG
 }
 
 do_deploy:append:raspberrypi3-64() {
