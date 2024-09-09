@@ -22,6 +22,10 @@ SRC_URI:append:raspberrypi4 = " \
     file://rpi4-nvmem.cfg \
 "
 
+DEPENDS = " \
+    coreutils-native \
+"
+
 KCONFIG_MODE = "--alldefconfig"
 KBUILD_DEFCONFIG:raspberrypi0-wifi ?= "bcmrpi_defconfig"
 KBUILD_DEFCONFIG:raspberrypi ?= "bcmrpi_defconfig"
