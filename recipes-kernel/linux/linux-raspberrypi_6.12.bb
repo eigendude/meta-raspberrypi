@@ -1,9 +1,9 @@
-LINUX_VERSION ?= "6.12.4"
-LINUX_RPI_BRANCH ?= "rpi-6.12.4"
+LINUX_VERSION ?= "6.12.8"
+LINUX_RPI_BRANCH ?= "rpi-6.12.8"
 LINUX_RPI_KMETA_BRANCH ?= "yocto-6.12"
 
-SRCREV_machine = "2b062ea1e464d420fa89802d0dafa54bae31eaf7"
-SRCREV_meta = "9ee4baec963b10d213c060622fce6d2b34166f40"
+SRCREV_machine = "faa16be160ece6fd0a6be712690936553b565bc0"
+SRCREV_meta = "1204392cf280ffdab50fdf4c91ae3a4be8dd25f2"
 
 KMETA = "kernel-meta"
 
