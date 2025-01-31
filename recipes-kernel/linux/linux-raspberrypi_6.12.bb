@@ -8,7 +8,7 @@ SRCREV_meta = "cbe89aee4d05e11b15a928dfbc216fbdbdf062d2"
 KMETA = "kernel-meta"
 
 SRC_URI = " \
-    git://github.com/Aclima/linux.git;name=machine;branch=${LINUX_RPI_BRANCH};protocol=ssh \
+    git://git@github.com/Aclima/linux.git;name=machine;branch=${LINUX_RPI_BRANCH};protocol=ssh \
     git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=${LINUX_RPI_KMETA_BRANCH};destsuffix=${KMETA} \
     file://powersave.cfg \
     file://android-drivers.cfg \
